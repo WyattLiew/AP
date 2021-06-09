@@ -28,20 +28,20 @@ mainPage_timeline.eventCallback("onReverseComplete", completeReverseWhiteGoldHan
 //     })
 // }, false);
 
-var ts_hp = document.getElementById('touchSurface_homePage');
-    var ts_hp_inner = document.getElementById('touchSurface_homePage_inner');
-     var story = document.getElementById("story");
-    var hidetimer = null
-    swipedetect(ts_hp, function(swipedir){
-        if (swipedir != 'none'){
-            console.log(swipedir);
-            gsap.to('#homePage_scene',{duration:4,opacity:0});
+// var ts_hp = document.getElementById('touchSurface_homePage');
+//     var ts_hp_inner = document.getElementById('touchSurface_homePage_inner');
+//      var story = document.getElementById("story");
+//     var hidetimer = null
+//     swipedetect(ts_hp, function(swipedir){
+//         if (swipedir != 'none'){
+//             console.log(swipedir);
+//             gsap.to('#homePage_scene',{duration:4,opacity:0});
             
-             story.style.display="block";
-             story.play();
-             story.addEventListener('ended',storyEndHandler,false);
-        }
-    })
+//              story.style.display="block";
+//              story.play();
+//              story.addEventListener('ended',storyEndHandler,false);
+//         }
+//     })
 
 function swipedetect(el, callback){
   
@@ -99,11 +99,11 @@ function storyEndHandler(e) {
     .fromTo('.mainPage__box-Container-right',{x:'100%'},{opacity:1,x:'0%'},'<')
     .fromTo('.mainPage__title',{opacity:0,y:70},{opacity:1,y:0})
     .fromTo('.mainPage__title-right',{opacity:0,y:70},{opacity:1,y:0},'<')
-    .fromTo('.solidLine',{opacity:0,width:'0%'},{opacity:1,width:'83%'})
-    .fromTo('.solidLine-right',{opacity:0,width:'0%'},{opacity:1,width:'83%'},'<')
-    .fromTo('.solidLine-2',{opacity:0,width:'0%'},{opacity:1,width:'60%'})
-    .fromTo('.solidLine-2-right',{opacity:0,width:'0%'},{opacity:1,width:'30%'},'<')
-    .fromTo('.mainPage__action',{opacity:0},{opacity:1},'<')
+    // .fromTo('.solidLine',{opacity:0,width:'0%'},{opacity:1,width:'83%'})
+    // .fromTo('.solidLine-right',{opacity:0,width:'0%'},{opacity:1,width:'83%'},'<')
+    // .fromTo('.solidLine-2',{opacity:0,width:'0%'},{opacity:1,width:'60%'})
+    // .fromTo('.solidLine-2-right',{opacity:0,width:'0%'},{opacity:1,width:'30%'},'<')
+    .fromTo('.mainPage__action',{opacity:0},{opacity:1},)
     .fromTo('.mainPage__action-right',{opacity:0},{opacity:1},'<')
     .fromTo('.mainPage__image-container',{opacity:0},{opacity:1})
     .fromTo('.mainPage__image-container-right',{opacity:0},{opacity:1},'<');

@@ -136,18 +136,18 @@ html, body {
 .mainPage__box-Container,
 .mainPage__box-Container-right {
   position: relative;
-  width: 80%;
-  padding-top: 30px;
+  width: 90%;
+  padding-top: 25px;
 }
 
 .sideContent__box-left {
-  height: 500px;
+  height: 470px;
   background: #34343457;
   position: relative;
 }
 
 .sideContent__box-right {
-  height: 500px;
+  height: 470px;
   background: #34343457;
   position: relative;
   right: 0;
@@ -159,17 +159,17 @@ html, body {
 }
 
 .mainPage__image-container img {
-  width: 400px;
+  width: 370px;
     top: 0px;
-    left: 40px;
+    left: 20px;
     position: absolute;
   animation: float 4s ease-in-out infinite;
 }
 
 .mainPage__image-container-right img {
-  width: 400px;
-  top: 45px;
-  left: 50px;
+  width: 370px;
+  top: 70px;
+  left: 95px;
     position: absolute;
   animation: float 4s ease-in-out infinite;
   padding-right: 30px;
@@ -200,25 +200,25 @@ html, body {
 .mainPage__title-right{
   color: #fff;
   text-transform: uppercase;
-  padding-left: 280px;
+  padding-left: 135px;
   text-align: right;
 }
 
 .mainPage__title {
   color: #fff;
   text-transform: uppercase;
-  padding-right: 220px;
+  padding-right: 115px;
 }
 
 .mainPage__title h1,
 .mainPage__title-right h1 {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 300;
 }
 
 .mainPage__title h2,
 .mainPage__title-right h2 {
-  font-size: 44px;
+  font-size: 34px;
   font-weight: 100;
   margin-top: 3px;
   font-style: italic;
@@ -256,9 +256,12 @@ p.solidLine {
 }
 
 p.mainPage__action {
-    width: 55%;
-    float: right;
+   width: fit-content;
+    padding: 10px;
+    font-size: 22px;
     margin-top: 20px;
+    border: 2px solid white;
+    text-transform: uppercase;
 }
 
 p.solidLine-right {
@@ -278,10 +281,14 @@ p.solidLine-right {
 }
 
 p.mainPage__action-right {
-  width: 67%;
-  /*position: absolute;*/
     margin-top: 20px;
     float: right;
+    width: fit-content;
+    padding: 10px;
+    font-size: 22px;
+    margin-top: 20px;
+    border: 2px solid white;
+    text-transform: uppercase;
 }
 
 @keyframes float {
@@ -320,16 +327,16 @@ p.mainPage__action-right {
     text-align: center;
     background: #34343457;
     width: 50%;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 .watchPage__whiteGold-Header-title h1 {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 300;
 }
 
 .watchPage__whiteGold-Header-title h2 {
-  font-size: 44px;
+  font-size: 34px;
   font-weight: 100;
   margin-top: 3px;
   font-style: italic;
@@ -347,15 +354,15 @@ p.mainPage__action-right {
 #watchPage__whiteGold-Scene
  {
     position: absolute;
-    width: 1100px;
+    width: 950px;
     height: 850px;
-    left: 21%; /*L:10px top 6px w 1400*/
-    top: 6%;
+    left: 13%; /*L:10px top 6px w 1400*/
+    top: 10%;
 }
 #watchPageCanvasWhiteGold
  {
     position: absolute;
-    width: 1400px;
+    width: 950px;
     height: 850px;
     left: 6%;
     top: 6%;
@@ -364,13 +371,13 @@ p.mainPage__action-right {
 #watchPage__whiteGold-Option {
   position: absolute;
   bottom: 0;
-  margin: 50px;
-  padding-left: 35px;
+  margin: 0 25px 40px 0;
+  padding-left: 25px;
   z-index: 10;
 }
 
 #watchPage__whiteGold-Option button {
-      font-size: 28px;
+      font-size: 18px;
     border: 2px solid white;
     text-decoration: none;
     background: none;
@@ -385,13 +392,13 @@ p.mainPage__action-right {
 #watchPage__whiteGold-Menu {
   position: absolute;
   bottom: 0;
-  margin: 0 0px 50px 0;
-  right: 50px;
+  margin: 0 0px 40px 0;
+  right: 25px;
   z-index: 10;
 }
 
 #watchPage__whiteGold-Menu button {
-     font-size: 28px;
+     font-size: 18px;
     border: 2px solid white;
     text-decoration: none;
     background: none;
@@ -480,9 +487,9 @@ p.mainPage__action-right {
 }
 
 .watchPage__image-container img {
-  width: 560px;
+  width: 480px;
     top: -5px;
-    left: 58px;
+    left: -30px;
     position: absolute;
 }
 
@@ -513,28 +520,28 @@ p.mainPage__action-right {
 }
 
 #watchPage__whiteGold-specBtn1 {
-  top: 40px;
-    left: 230px;
+  top: 20px;
+    left: 125px;
 }
 
 #watchPage__whiteGold-specBtn2 {
-  top: 160px;
-    left: 350px;
+  top: 130px;
+    left: 200px;
 }
 
 #watchPage__whiteGold-specBtn3 {
-  top: 200px;
-    left: 200px;
+  top: 155px;
+    left: 100px;
 }
 
 #watchPage__whiteGold-specBtn4 {
-  top: 270px;
-    left: 200px;
+  top: 210px;
+    left: 120px;
 }
 
 #watchPage__whiteGold-specBtn5 {
-  top: 190px;
-    left: 480px;
+  top: 150px;
+    left: 330px;
 }
 
 .watchPage__whiteGold-details {
@@ -543,25 +550,25 @@ p.mainPage__action-right {
 }
 
 .watchPage__whiteGold-details h1{
-    font-size: 38px;
-    letter-spacing: 1px;
+    font-size: 33px;
+    /*letter-spacing: 1px;*/
     font-weight: 100;
 }
 
 .watchPage__whiteGold-details p{
-    font-size: 24px;
-    letter-spacing: 1px;
+    font-size: 17px;
+    /*letter-spacing: 1px;*/
     font-weight: 100;
     padding-top: 5px 0 5px 0;
 }
 
 #whiteGold__spec-1 {
   position: absolute;
-    width: 450px;
+    width: 300px;
     text-align: right;
     color: white;
-    top: 300px;
-    left: -500px;
+    top: 285px;
+    left: -350px;
     opacity: 0;
 }
 
@@ -578,11 +585,19 @@ p.mainPage__action-right {
 
 #whiteGold__spec-2 {
   position: absolute;
-    width: 550px;
+    width: 400px;
     color: white;
     top: 350px;
-    left: 630px;
+    left: 440px;
     opacity: 0;
+}
+
+#whiteGold__spec-2 h1{
+  font-size: 26px;
+}
+
+#whiteGold__spec-2 p{
+  font-size: 18px;
 }
 
 #whiteGold__spec-2 .row {
@@ -602,16 +617,16 @@ p.mainPage__action-right {
 #whiteGold__spec-2 .col {
       width: 50%;
     padding: 6px 10px 0 0;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 #whiteGold__spec-3 {
   position: absolute;
-    width: 450px;
+    width: 300px;
     text-align: right;
     color: white;
-    top: 530px;
-    left: -520px;
+    top: 500px;
+    left: -375px;
     opacity: 0;
 }
 
@@ -627,11 +642,11 @@ p.mainPage__action-right {
 
 #whiteGold__spec-4 {
   position: absolute;
-    width: 450px;
+    width: 300px;
     text-align: right;
     color: white;
-    top: 660px;
-    left: -500px;
+    top: 610px;
+    left: -365px;
     opacity: 0;
 }
 
@@ -647,11 +662,11 @@ p.mainPage__action-right {
 
 #whiteGold__spec-5 {
   position: absolute;
-    width: 450px;
+    width: 300px;
     text-align: left;
     color: white;
-    top: 630px;
-    left: 725px;
+    top: 583px;
+    left: 500px;
     opacity: 0;
 }
 
@@ -679,7 +694,7 @@ p.mainPage__action-right {
 }
 .watchPage__whiteGold-gallery-mySlides img {
   /*vertical-align: middle;*/
-  width: 50%;
+  width: 90%;
   height: 800px;
 }
 
@@ -692,67 +707,26 @@ p.mainPage__action-right {
 
 /* Hide the images by default */
 .watchPage__whiteGold-gallery-mySlides {
-  display: none;
-  padding-top: 50px;
+  padding-top: 80px;
 }
 
-
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-  display: none;
+.splide__pagination {
+  top: 115% !important;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.splide__pagination__page.is-active {
+     transform: scale(1) !important; 
+    background: #fff;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.watchPage__whiteGold-gallery-row {
-  display: flex;
-  justify-content: center;
-}
-.watchPage__whiteGold-gallery-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.watchPage__whiteGold-gallery-column {
-  padding: 15px;
-}
-
-/* Add a transparency effect for thumnbail images */
-.watchPage__whiteGold-gallery-demo {
-  opacity: 0.6;
-    width: 180px;
-    height: 180px;
-}
-
-.active,
-.watchPage__whiteGold-gallery-demo:hover {
-  opacity: 1;
+.splide__pagination__page {
+    width: 100px !important;
+    height: 10px !important;
+     border-radius: 0% !important; 
+     margin: 0 !important; 
+    padding: 0;
+    transition: transform .5s linear;
+     opacity: 1 !important; 
 }
 
 /* GAllery button */

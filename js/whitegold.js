@@ -220,7 +220,7 @@ function handleWhiteGoldPage_gallery(e) {
     //no working
     }else{
  if (clickcount_whitegold_gallery <1 && clickcount_whitegold_spec <1 && clickcount_whitegold_video <1) {
-    swapImageToWhitegold();
+    // swapImageToWhitegold();
      gsap.to('#watchPage__whiteGold__gallerytoWhiteGold',{duration:0.3,border: "2px solid #747474",boxShadow: "1px 1px 8px 13px #747474",color: "#373737"});
      // watchPage__whiteGold__gallerytoWhiteGold.classList.remove("selected")
      gsap.to('#watchPage__whiteGold__gallerytoPinkGold',{duration:2,border: "2px solid #ffffff",boxShadow: "1px 1px 8px 13px #7f6f6f6",color: "#ffffff"});
@@ -259,32 +259,32 @@ function whiteGoldGalleryEndHandler(e) {
 };
 
 // Gallery
-var whiteGoldslideIndex = 1;
-whiteGoldshowSlides(whiteGoldslideIndex);
+// var whiteGoldslideIndex = 1;
+// whiteGoldshowSlides(whiteGoldslideIndex);
 
-function whiteGoldplusSlides(n) {
-  whiteGoldshowSlides(whiteGoldslideIndex += n);
-}
+// function whiteGoldplusSlides(n) {
+//   whiteGoldshowSlides(whiteGoldslideIndex += n);
+// }
 
-function whiteGoldCurrentSlide(n) {
-  whiteGoldshowSlides(whiteGoldslideIndex = n);
-}
+// function whiteGoldCurrentSlide(n) {
+//   whiteGoldshowSlides(whiteGoldslideIndex = n);
+// }
 
-function whiteGoldshowSlides(n) {
-  var i;
-  var whiteGoldslides = document.getElementsByClassName("watchPage__whiteGold-gallery-mySlides");
-  var whiteGolddots = document.getElementsByClassName("watchPage__whiteGold-gallery-demo");
-  if (n > whiteGoldslides.length) {whiteGoldslideIndex = 1}
-  if (n < 1) {whiteGoldslideIndex = whiteGoldslides.length}
-  for (i = 0; i < whiteGoldslides.length; i++) {
-      whiteGoldslides[i].style.display = "none";
-  }
-  for (i = 0; i < whiteGolddots.length; i++) {
-      whiteGolddots[i].className = whiteGolddots[i].className.replace(" active", "");
-  }
-  whiteGoldslides[whiteGoldslideIndex-1].style.display = "block";
-  whiteGolddots[whiteGoldslideIndex-1].className += " active";
-}
+// function whiteGoldshowSlides(n) {
+//   var i;
+//   var whiteGoldslides = document.getElementsByClassName("watchPage__whiteGold-gallery-mySlides");
+//   var whiteGolddots = document.getElementsByClassName("watchPage__whiteGold-gallery-demo");
+//   if (n > whiteGoldslides.length) {whiteGoldslideIndex = 1}
+//   if (n < 1) {whiteGoldslideIndex = whiteGoldslides.length}
+//   for (i = 0; i < whiteGoldslides.length; i++) {
+//       whiteGoldslides[i].style.display = "none";
+//   }
+//   for (i = 0; i < whiteGolddots.length; i++) {
+//       whiteGolddots[i].className = whiteGolddots[i].className.replace(" active", "");
+//   }
+//   whiteGoldslides[whiteGoldslideIndex-1].style.display = "block";
+//   whiteGolddots[whiteGoldslideIndex-1].className += " active";
+// }
 
 // Gallery swap image to pink gold
 function handleWhiteGoldPage_galleryToPinkGold(e) {
