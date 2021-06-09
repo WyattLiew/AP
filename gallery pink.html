@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.watchPage__pinkGold-gallery-img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.watchPage__pinkGold-gallery-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.watchPage__pinkGold-gallery-mySlides {
+  display: none;
+}
+
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.watchPage__pinkGold-gallery-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.watchPage__pinkGold-gallery-column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.watchPage__pinkGold-gallery-demo {
+  opacity: 0.6;
+}
+
+.active,
+.watchPage__pinkGold-gallery-demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+<h2 style="text-align:center">Slideshow Gallery</h2>
+
+<div class="watchPage__pinkGold-gallery-container">
+  <div class="watchPage__pinkGold-gallery-mySlides">
+    <img src="img_woods_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="watchPage__pinkGold-gallery-mySlides">
+    <img src="img_5terre_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="watchPage__pinkGold-gallery-mySlides">
+    <img src="img_mountains_wide.jpg" style="width:100%">
+  </div>
+    
+  <div class="watchPage__pinkGold-gallery-mySlides">
+    <img src="img_lights_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="watchPage__pinkGold-gallery-mySlides">
+    <img src="img_nature_wide.jpg" style="width:100%">
+  </div>
+    
+  <div class="watchPage__pinkGold-gallery-mySlides">
+    <img src="img_snow_wide.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="pinkGoldplusSlides(-1)">❮</a>
+  <a class="next" onclick="pinkGoldplusSlides(1)">❯</a>
+
+  <div class="watchPage__pinkGold-gallery-row">
+    <div class="watchPage__pinkGold-gallery-column">
+      <img class="watchPage__pinkGold-gallery-demo " src="img_woods.jpg" style="width:100%" onclick="pinkGoldCurrentSlide(1)">
+    </div>
+    <div class="watchPage__pinkGold-gallery-column">
+      <img class="watchPage__pinkGold-gallery-demo " src="img_5terre.jpg" style="width:100%" onclick="pinkGoldCurrentSlide(2)">
+    </div>
+    <div class="watchPage__pinkGold-gallery-column">
+      <img class="watchPage__pinkGold-gallery-demo " src="img_mountains.jpg" style="width:100%" onclick="pinkGoldCurrentSlide(3)">
+    </div>
+    <div class="watchPage__pinkGold-gallery-column">
+      <img class="watchPage__pinkGold-gallery-demo " src="img_lights.jpg" style="width:100%" onclick="pinkGoldCurrentSlide(4)">
+    </div>
+    <div class="watchPage__pinkGold-gallery-column">
+      <img class="watchPage__pinkGold-gallery-demo" src="img_nature.jpg" style="width:100%" onclick="pinkGoldCurrentSlide(5)">
+    </div>    
+    <div class="watchPage__pinkGold-gallery-column">
+      <img class="watchPage__pinkGold-gallery-demo " src="img_snow.jpg" style="width:100%" onclick="pinkGoldCurrentSlide(6)">
+    </div>
+  </div>
+</div>
+
+<script>
+var pinkGoldslideIndex = 1;
+pinkGoldshowSlides(pinkGoldslideIndex);
+
+function pinkGoldplusSlides(n) {
+  pinkGoldshowSlides(pinkGoldslideIndex += n);
+}
+
+function pinkGoldCurrentSlide(n) {
+  pinkGoldshowSlides(pinkGoldslideIndex = n);
+}
+
+function pinkGoldshowSlides(n) {
+  var i;
+  var pinkGoldslides = document.getElementsByClassName("watchPage__pinkGold-gallery-mySlides");
+  var pinkGolddots = document.getElementsByClassName("watchPage__pinkGold-gallery-demo");
+  if (n > pinkGoldslides.length) {pinkGoldslideIndex = 1}
+  if (n < 1) {pinkGoldslideIndex = pinkGoldslides.length}
+  for (i = 0; i < pinkGoldslides.length; i++) {
+      pinkGoldslides[i].style.display = "none";
+  }
+  for (i = 0; i < pinkGolddots.length; i++) {
+      pinkGolddots[i].className = pinkGolddots[i].className.replace(" active", "");
+  }
+  pinkGoldslides[pinkGoldslideIndex-1].style.display = "block";
+  pinkGolddots[pinkGoldslideIndex-1].className += " active";
+}
+</script>
+    
+</body>
+</html>
