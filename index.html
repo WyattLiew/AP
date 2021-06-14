@@ -8,14 +8,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/splide.min.css">
+        <link rel="preload" href="css/font/HelveticaNeueLTStd-Th.woff2" as="font" type="font/woff2" crossorigin>
     </head>
 </head>
 <body>
     <div class="bg">
-    <img src="../assets/bg.jpg">
+    <img src="assets/bg.jpg">
     </div>
     <!-- Home Page -->
-	<!-- <div id="homePage_scene">
+    <div id="homePage_scene">
         <canvas id="homePageCanvas">
         </canvas>
         <div id="touchSurface_homePage">
@@ -27,17 +28,17 @@
             <span></span>
         </div>
 </div>
-    </div> -->
+    </div>
 
     <!-- Story Here -->
-    <!-- <div class="story_banner">
+     <div class="story_banner">
      <video id="story" muted>
             <source src="assets/video2.mp4" type="video/mp4">
           </video>
-      </div> -->
+      </div>
 
       <!-- Main Page -->
-     <!--  <div class="mainPage-Container">
+      <div class="mainPage-Container">
 <div class="mainPage__box-Container float-left" id="mainPage-whiteGold-button">
         <div class="sideContent__box-left">
             <div class="mainPage__image-container">
@@ -68,7 +69,7 @@
         </div>
         </div>
     </div>
-</div> -->
+</div> 
 
 <!-- Watch Page (White Gold)-->
 <div class="watchPage__whiteGold-Container">
@@ -265,41 +266,41 @@
 <div id="watchPage__whiteGold-gallery">
        <div class="watchPage__whiteGold-gallery-container">
          <div id="whiteGold__gallery-close">X</div>
-         <div id="watchPage__whiteGold-galleryOption1">
+         <!-- <div id="watchPage__whiteGold-galleryOption1">
         <button class="selected" id="watchPage__whiteGold__gallerytoWhiteGold">White Gold</button>
     </div>
     <div id="watchPage__whiteGold-galleryOption2">
         <button id="watchPage__whiteGold__gallerytoPinkGold">Pink Gold</button>
-    </div>
-    <div class="splide">
+    </div> -->
+    <div class="splide1 splide">
     <div class="splide__track">
         <ul class="splide__list">
-            <li class="splide__slide">
+            <li class="splide__slide" style="width: 500px;">
                 <div class="watchPage__whiteGold-gallery-mySlides">
                 <img id="whiteGoldImage1" src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_CU04_PNG.png">
               </div>
             </li>
-            <li class="splide__slide" >
+            <li class="splide__slide"style="width: 500px;" >
                 <div class="watchPage__whiteGold-gallery-mySlides">
                 <img id="whiteGoldImage2" src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_GP09_PNG.png" >
               </div>
             </li>
-            <li class="splide__slide">
+            <li class="splide__slide"style="width: 500px;">
                  <div class="watchPage__whiteGold-gallery-mySlides">
                 <img id="whiteGoldImage3" src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_GP18_PNG.png" >
               </div>
             </li>
-            <li class="splide__slide">
+            <li class="splide__slide"style="width: 500px;">
                  <div class="watchPage__whiteGold-gallery-mySlides">
                 <img id="whiteGoldImage4" src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_backcase_GP06_PNG.png" >
               </div>
             </li>
-            <li class="splide__slide">
+            <li class="splide__slide"style="width: 500px;">
                 <div class="watchPage__whiteGold-gallery-mySlides">
     <img id="whiteGoldImage5" src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_CU03_PNG.png">
   </div>
             </li>
-             <li class="splide__slide">
+             <li class="splide__slide"style="width: 500px;">
                  <div class="watchPage__whiteGold-gallery-mySlides">
     <img id="whiteGoldImage6" src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_GP08_PNG.png" >
   </div>
@@ -318,22 +319,7 @@
           </video>
       </div>
 
-<script>
-    document.addEventListener( 'DOMContentLoaded', function () {
-        new Splide( '.splide', {
-    type     : 'loop',
-    padding: {
-        right: '10rem',
-        left : '10rem',
-    },
-    // perPage:2,
-    autoWidth: true,
-    focus    : 'center',
-    arrows: false,
-    // drag:true
-}).mount();
-    });
-</script>
+
 
 <script src="js/three.js"></script>
 <script src="js/OrbitControls.js"></script>
@@ -342,11 +328,27 @@
 <!-- <script src="js/3d.js"></script> -->
 <script src="node_modules/gsap/dist/gsap.min.js"></script>
 <script src="js/whitegold.js"></script>
-<!-- <script type="text/javascript" src="js/smoke.js"></script> -->
+<script type="text/javascript" src="js/smoke.js"></script>
 <script src="js/main.js"></script>
 <!-- <script src="js/touchbox.js"></script> -->
+ <script>
+      // window.CI360 = { notInitOnLoad: false };
+    </script>
 <script defer src="js/js-cloudimage-360-view.min.js"></script>
 <script src="js/splide.min.js"></script>
-
+<script>
+  // document.addEventListener( 'DOMContentLoaded', function () {
+      new Splide( '.splide1', {
+  type     : 'loop',
+  padding: {
+      right: '5rem',
+      left : '5rem',
+  },
+  autoWidth: true,
+  focus    : 'center',
+  arrows: false,
+}).mount();
+  // });
+</script>
 </body>
 </html>

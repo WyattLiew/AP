@@ -1,3 +1,4 @@
+
   * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,10 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  font-family: Helvetica;
+  /*font-family: helvetica neue;*/
+  font-family: 'Helvetica Neue LT Std';
+    font-weight: 100;
+    font-style: normal;
 }
 
 .bg {
@@ -50,16 +54,17 @@ html, body {
 .homePage__arrow-text h1{
   position: absolute;
   top: 85%;
-  left: 550px;
+  left: 600px;
   color: #ffffff;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 100;
+  text-transform: uppercase;
 }
 
 .homePage__arrow span{
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
   transform: rotate(225deg);
@@ -99,7 +104,7 @@ html, body {
 
 #whiteGold__video-close {
     color: white;
-    font-size: 60px;
+    font-size: 45px;
     text-shadow: 2px 3px 12px white;
     right: 60px;
     top: 20px;
@@ -109,7 +114,7 @@ html, body {
 
 #whiteGold__gallery-close {
     color: white;
-    font-size: 60px;
+    font-size: 45px;
     text-shadow: 2px 3px 12px white;
     right: 60px;
     top: 20px;
@@ -141,13 +146,13 @@ html, body {
 }
 
 .sideContent__box-left {
-  height: 470px;
+  height: 350px;
   background: #34343457;
   position: relative;
 }
 
 .sideContent__box-right {
-  height: 470px;
+  height: 350px;
   background: #34343457;
   position: relative;
   right: 0;
@@ -159,17 +164,18 @@ html, body {
 }
 
 .mainPage__image-container img {
-  width: 370px;
+  width: 280px;
+  /* height: 500px; */
     top: 0px;
-    left: 20px;
+    left: 60px;
     position: absolute;
   animation: float 4s ease-in-out infinite;
 }
 
 .mainPage__image-container-right img {
-  width: 370px;
-  top: 70px;
-  left: 95px;
+  width: 280px;
+  top: 45px;
+  left: 140px;
     position: absolute;
   animation: float 4s ease-in-out infinite;
   padding-right: 30px;
@@ -192,7 +198,7 @@ html, body {
 
 .mainPage__header-right {
   position: absolute;
-  /*left: 10%;*/
+  left: 10%;
   top: 25%;
   color: #ffffff;
 }
@@ -200,14 +206,14 @@ html, body {
 .mainPage__title-right{
   color: #fff;
   text-transform: uppercase;
-  padding-left: 135px;
+  padding-left: 100px;
   text-align: right;
 }
 
 .mainPage__title {
   color: #fff;
   text-transform: uppercase;
-  padding-right: 115px;
+  padding-right: 220px;
 }
 
 .mainPage__title h1,
@@ -331,7 +337,7 @@ p.mainPage__action-right {
 }
 
 .watchPage__whiteGold-Header-title h1 {
-  font-size: 38px;
+  font-size: 36px;
   font-weight: 300;
 }
 
@@ -354,16 +360,17 @@ p.mainPage__action-right {
 #watchPage__whiteGold-Scene
  {
     position: absolute;
-    width: 950px;
-    height: 850px;
-    left: 13%; /*L:10px top 6px w 1400*/
+    width: 700px;
+    /* margin: 100px auto; */
+    /* height: 850px; */
+    left: 24%; /*L:10px top 6px w 1400*/
     top: 10%;
 }
 #watchPageCanvasWhiteGold
  {
     position: absolute;
-    width: 950px;
-    height: 850px;
+    width: 850px;
+    height: 950px;
     left: 6%;
     top: 6%;
 }
@@ -421,7 +428,7 @@ p.mainPage__action-right {
 .smoke__text {
   /*background: black;*/
   overflow: hidden;
-  font: 3vw/100vh "Finger Paint";
+  font: 3vw/100vh "Helvetica Neue LT Std";
   text-align: center;
   color: transparent;
   backface-visibility: hidden;
@@ -487,9 +494,9 @@ p.mainPage__action-right {
 }
 
 .watchPage__image-container img {
-  width: 480px;
-    top: -5px;
-    left: -30px;
+  width: 350px;
+    top: -35px;
+    left: 40px;
     position: absolute;
 }
 
@@ -500,7 +507,7 @@ p.mainPage__action-right {
     border-radius: 100px;
     font-family: inherit;
     position: relative;
-    padding: 20px 20px;
+    padding: 15px 15px;
     background: #fff;
     appearance: none;
     outline: none;
@@ -520,28 +527,28 @@ p.mainPage__action-right {
 }
 
 #watchPage__whiteGold-specBtn1 {
-  top: 20px;
-    left: 125px;
+  top: -15px;
+    left: 150px;
 }
 
 #watchPage__whiteGold-specBtn2 {
-  top: 130px;
+  top: 65px;
     left: 200px;
 }
 
 #watchPage__whiteGold-specBtn3 {
-  top: 155px;
-    left: 100px;
+  top: 75px;
+    left: 135px;
 }
 
 #watchPage__whiteGold-specBtn4 {
-  top: 210px;
-    left: 120px;
+  top: 120px;
+    left: 145px;
 }
 
 #watchPage__whiteGold-specBtn5 {
-  top: 150px;
-    left: 330px;
+  top: 70px;
+    left: 300px;
 }
 
 .watchPage__whiteGold-details {
@@ -550,16 +557,17 @@ p.mainPage__action-right {
 }
 
 .watchPage__whiteGold-details h1{
-    font-size: 33px;
-    /*letter-spacing: 1px;*/
+    font-size: 28px;
+    letter-spacing: 1px;
     font-weight: 100;
 }
 
 .watchPage__whiteGold-details p{
-    font-size: 17px;
-    /*letter-spacing: 1px;*/
+    font-size: 15px;
+    letter-spacing: 0.5px;
     font-weight: 100;
     padding-top: 5px 0 5px 0;
+    line-height: 1rem;
 }
 
 #whiteGold__spec-1 {
@@ -567,8 +575,8 @@ p.mainPage__action-right {
     width: 300px;
     text-align: right;
     color: white;
-    top: 285px;
-    left: -350px;
+    top: 240px;
+    left: -330px;
     opacity: 0;
 }
 
@@ -587,8 +595,8 @@ p.mainPage__action-right {
   position: absolute;
     width: 400px;
     color: white;
-    top: 350px;
-    left: 440px;
+    top: 230px;
+    left: 420px;
     opacity: 0;
 }
 
@@ -598,6 +606,7 @@ p.mainPage__action-right {
 
 #whiteGold__spec-2 p{
   font-size: 18px;
+  padding: 4px 0 4px 0;
 }
 
 #whiteGold__spec-2 .row {
@@ -625,8 +634,8 @@ p.mainPage__action-right {
     width: 300px;
     text-align: right;
     color: white;
-    top: 500px;
-    left: -375px;
+    top: 400px;
+    left: -345px;
     opacity: 0;
 }
 
@@ -645,8 +654,8 @@ p.mainPage__action-right {
     width: 300px;
     text-align: right;
     color: white;
-    top: 610px;
-    left: -365px;
+    top: 480px;
+    left: -333px;
     opacity: 0;
 }
 
@@ -665,8 +674,8 @@ p.mainPage__action-right {
     width: 300px;
     text-align: left;
     color: white;
-    top: 583px;
-    left: 500px;
+    top: 455px;
+    left: 470px;
     opacity: 0;
 }
 
@@ -695,7 +704,7 @@ p.mainPage__action-right {
 .watchPage__whiteGold-gallery-mySlides img {
   /*vertical-align: middle;*/
   width: 90%;
-  height: 800px;
+  height: 500px;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -707,11 +716,11 @@ p.mainPage__action-right {
 
 /* Hide the images by default */
 .watchPage__whiteGold-gallery-mySlides {
-  padding-top: 80px;
+  padding-top: 115px;
 }
 
 .splide__pagination {
-  top: 115% !important;
+  top: 111% !important;
 }
 
 .splide__pagination__page.is-active {

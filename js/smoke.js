@@ -43,7 +43,7 @@ function init() {
     textTexture = THREE.ImageUtils.loadTexture('assets/AP_BRAND_LOGOTYPE_WHITE.png');
     textMaterial = new THREE.MeshLambertMaterial({color: 0xffffff, opacity: 1, map: textTexture, transparent: true, blending: THREE.AdditiveBlending})
     text = new THREE.Mesh(textGeo,textMaterial);
-    text.position.z = 750;
+    text.position.z = 700;
 
     
     scene.add(text);
